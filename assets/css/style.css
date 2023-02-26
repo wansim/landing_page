@@ -1,0 +1,407 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body{
+    margin: 0px;
+    background-color: rgb(240, 248, 255);
+}
+
+.dashboard{
+    margin: 0 auto;
+    padding: 0px 15px;
+    
+}
+
+/* ======================NAVIGATION */
+
+.dashboard .navigation{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+    
+}
+
+.dashboard .navigation img.logo{
+    width: 50px;
+    height:50px;
+    border-radius: 10px;
+
+}
+
+.dashboard .navigation img.profile{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+
+}
+
+.dashboard .navigation .icons{
+    /* margin-top: 10px; */
+   
+}
+
+.dashboard .navigation .icons .material-symbols-outlined{
+    margin-left: 5px;
+    margin-right:5px;
+    font-size: 30px;
+    color: #727272;
+
+}
+
+/* ======================MAIN */
+.dashboard .main .search{
+    margin-top: 40px;
+}
+
+.dashboard .main .search form{
+    margin-top: 40px;
+    position: relative;
+   /*  border: black 1px solid; */
+}
+
+.dashboard .main .search form input{
+    width: 100%;
+    font-size: 16px;
+    padding: 10px 10px 10px 60px;
+    border: 1px solid #dadada;
+    background-color: rgba(0 0 0 / 0);
+
+}
+
+.dashboard .main .search form span{
+    position: absolute;
+    left:15px;
+    top: 10px;
+    color: #727272;
+    
+}
+
+.dashboard .main .search .notification{
+    margin-top: 20px;    
+    
+}
+
+.dashboard .main .search .notification span:nth-child(1){
+    margin-right: 15px;    
+    position: relative;
+    
+}
+
+.dashboard .main .search .notification span:nth-child(1)::before{
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: sandybrown;
+    position: absolute;
+    border-radius: 50%;
+    top: 5px;
+    
+}
+
+
+/* ======================MY PROJECTS */
+
+.dashboard .main .title{
+    margin-bottom: 30px;
+
+}
+
+.dashboard .main .title h1{
+    font-size: 35px;
+    line-height: 0px;
+
+}
+
+.dashboard .main .title {
+    margin-top: 40px;
+
+}
+
+.dashboard .main .title label{
+    margin-right: 15px;
+    color: #727272;
+    font-size: 16px;
+
+}
+
+.dashboard .main .title select{
+    border: none;
+    background-color: rgba(0 0 0 / 0);
+    font-size: 16px;
+
+}
+
+/* ======================PROJECT LISTING */
+.dashboard .main .project_listing .project_card{
+    background-color: #fff;
+    box-shadow: 1px 1px 40px rgba (0 0 0 / .01);
+    padding: 20px 20px 20px 60px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.dashboard .main .project_listing .project_card .category{
+    width: 30px;
+    height: 50px;
+    background-color: rebeccapurple;
+    border-radius: 0px 10px 10px 0px;
+    position: absolute;
+    left: 0;
+    
+}
+
+.category_color1{
+    background-color: tan !important;
+}
+
+.category_color2{
+    background-color: rebeccapurple !important;
+}
+
+.category_color3{
+    background-color: sandybrown !important;
+}
+
+.category_color4{
+    background-color: lightcyan !important;
+}
+
+.dashboard .main .project_listing .project_card .card_content h2{
+    font-size: 20px;
+    line-height: 0;
+}
+
+.dashboard .main .project_listing .project_card .card_content p{
+    color: #727272;
+}
+
+.dashboard .main .project_listing .project_card .card_content ul{
+    list-style: none;
+    position: relative;
+    margin-left: 0px;
+    padding-left: 0px;
+    
+}
+
+.dashboard .main .project_listing .project_card .card_content li{
+    position: relative;
+    margin-left: 15px;
+    color: #727272; 
+    
+}
+
+.dashboard .main .project_listing .project_card .card_content li::before{
+    content: "\268A";
+    position: absolute;
+    left: -15px;
+    top: -1px;
+}
+
+
+.dashboard .main .project_listing .project_card .card_content .card_footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    
+}
+
+.dashboard .main .project_listing .project_card .card_content .card_footer .card_media img{
+    width: 50px;
+    height: 50px;
+    border-radius: 40px;
+    border: 4px solid aliceblue;    
+    
+}
+
+.dashboard .main .project_listing .project_card .card_content .card_footer .card_media img.stack{
+    margin-left: -20px;
+
+}
+
+
+/* ======================ASIDE */
+
+/* Chart */
+.dashboard .aside .chart{
+    background-color: #fff;
+    padding: 15px;
+    position: relative;
+    margin-bottom: 30px;
+
+}
+
+.dashboard .aside .chart .completed{
+    text-align: center;
+    margin: 40px 0px;
+
+}
+
+.dashboard .aside .chart .completed h3{
+    line-height: 0px;
+    
+}
+
+.dashboard .aside .chart .completed p{
+    color: #727272;
+    
+}
+
+
+/* Recent projects */
+.dashboard .aside .recent_projects{
+    background-color: #fff;
+    padding: 15px 15px 15px 60px;
+    position: relative;
+    margin-bottom: 30px;
+
+}
+
+.dashboard .aside .recent_projects .recent_card .card_content{
+    display: flex;
+    justify-content: space-between;
+  
+}
+
+.dashboard .aside .recent_projects .recent_card .card_content .card_header .category{
+    width: 16px;
+    height: 16px;
+    border-radius: 16px;
+    position: absolute;
+    left: 10px;
+    margin-top: 20px;
+
+}
+
+.dashboard .aside .recent_projects .recent_card .card_content .card_header h2{
+    line-height: 0px;
+}
+
+.dashboard .aside .recent_projects .recent_card .card_content .card_header p{
+    color: #727272;
+}
+
+/* ======================MEDIA QUERY - 768px */
+
+@media only screen and (min-width: 768px){
+    /* Dashboard Search */
+    .dashboard .main .search{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .dashboard .main .search form{
+        margin-top: 10px;
+    }
+
+    main.main .project_listing{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+       
+    }
+   
+    main.main .project_listing .project_card{
+        width: 47%;
+    }
+
+    main.main .project_listing .project_card .card_content .card_footer span{
+        margin-top: 15px; 
+    }
+
+/* Recent Projects */
+    aside.aside{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        background-color: #fff;
+        padding-top: 70px;
+    }
+
+    aside.aside .chart{
+        width:40%
+    }
+
+    aside.aside .recent_projects{
+        width:55%
+    }
+
+    aside.aside .recent_projects .recent_card .card_content .card_footer span{
+       margin-top: 15px;
+    }
+
+}
+
+
+/* ======================MEDIA QUERY - 1024px */
+@media only screen and (min-width: 1024px){
+    .dashboard .navigation,
+    .dashboard .navigation div span,
+    aside.aside{
+        display: block;
+    }
+
+    .dashboard .navigation{
+        width: 60px;
+        position: fixed;
+        z-index: 10;
+    }
+
+    main.main{
+        width: 60%;
+        margin-left: 90px;
+        margin-right: 20px;
+    }
+
+    aside.aside{
+        width: 27%;
+        padding-top: 0px;
+        position: fixed;
+        top: 20px;
+        right: 0px;
+        background-color: transparent;
+    }
+
+    aside.aside .chart,
+    aside.aside .recent_projects{
+        width: 100%; 
+        border-radius: 10px;         
+    }
+
+    .dashboard .navigation .icons{
+        margin-top: 19vh;
+        margin-bottom: 19vh;  
+    }
+
+    .dashboard .navigation .icons span{
+        margin-top: 5vh;
+       
+    }
+
+}
+
+
+/* ======================MEDIA QUERY - 1111px */
+@media only screen and (min-width: 1111px) {
+    main.main .project_listing .project_card{
+        width: 32%;
+    }
+
+    main.main{
+        width: 65%;
+    }
+}
+
+/* ======================MEDIA QUERY - 1500px */
+@media only screen and (min-width: 1500px) {
+    aside.aside .recent_projects .recent_card:nth-child(4){
+       display: none; 
+    }
+
+    
+}

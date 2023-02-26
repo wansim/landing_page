@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/icons.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.2.1/chart.min.js"></script>
+</head>
+<body>
+    <div class="dashboard"> <!-- Dashboard -->
+       
+        <nav class="navigation"> <!-- Navigation -->
+            <img src="/assets/img/logo.svg" alt="Company_logo" class="logo">
+
+            <div class="icons"> 
+                <span class="
+                "> dashboard</span>
+                <span class="material-symbols-outlined"> trending_up</span>
+                <span class="material-symbols-outlined"> group</span>
+                <span class="material-symbols-outlined"> event</span>
+                <span class="material-symbols-outlined"> settings</span>
+            </div>
+            <img src="/assets/img/headshot10.jpg" alt="User profile image" class="profile">
+
+        </nav> <!-- Navigation end -->
+
+        <main class="main"> <!-- Main -->
+            
+            <section class="search"> <!-- Search -->
+                <form action="">
+                    <input type="text"  name="search"   id="searchProject" placeholder="Search here">
+                    <span class="material-symbols-outlined"> search</span>
+                </form>
+                <div class="notification">
+                    <span class="material-symbols-outlined"> notification_important</span>
+                    <span class="material-symbols-outlined"> edit</span>
+                </div>                
+            </section> <!-- Search end -->
+
+            <section class="title"> <!-- Title -->
+                <h1>My Projects</h1>           
+            
+                <label for="projects"> Sort by:
+                    <select name="projects"  id="projects">
+                        <option value="">Select</option>
+                        <option value="recent">Recent Projects</option>
+                        <option value="finished">Finished Projects</option>
+                        <option value="ongoing">Ongoing Projects</option>
+                        <option value="stalled">Stalled Projects</option>
+                    </select>
+                </label>
+        
+
+                
+            </section> <!-- Title end -->
+
+            <section class="project_listing"> <!-- Project Listing -->
+                
+                <article class="project_card" data-status="finished" title="Finished Project"> <!-- Project Card1-->
+                    <div class="category category_color1"></div>
+                    <div class="card_content">
+                        <header class="card_head">
+                            <h2>Graphic Design</h2>
+                            <p>Active recently</p>
+                            <ul>
+                                <li>Coming soon banner</li>
+                                <li>Book cover</li>
+                            </ul>
+                        </header>
+                        <footer class="card_footer">
+                            <div class="card_media">
+                                <img src="/assets/img/headshot1.jpg" alt="" >
+                                <img src="/assets/img/headshot2.jpg" alt="" class="stack">
+                                <img src="/assets/img/headshot3.jpg" alt="" class="stack">
+                            </div>
+                            <span class="material-symbols-outlined"> more_vert</span>
+                        </footer>
+                    </div>                    
+                </article> <!-- Project Card1 End-->
+
+                <article class="project_card" data-status="ongoing" title="Ongoing Project"> <!-- Project Card2-->
+                    <div class="category"></div>
+                    <div class="card_content">
+                        <header class="card_head">
+                            <h2>Graphic Design</h2>
+                            <p>Active recently</p>
+                            <ul>
+                                <li>Coming soon banner</li>
+                                <li>Book cover</li>
+                            </ul>
+                        </header>
+                        <footer class="card_footer">
+                            <div class="card_media">
+                                <img src="/assets/img/headshot1.jpg" alt="" >
+                                <img src="/assets/img/headshot2.jpg" alt="" class="stack">
+                                <img src="/assets/img/headshot3.jpg" alt="" class="stack">
+                            </div>
+                            <span class="material-symbols-outlined"> more_vert</span>
+                        </footer>
+                    </div>                    
+                </article> <!-- Project Card2 End-->
+
+                <article class="project_card" data-status="stalled" title="Stalled Project"> <!-- Project Card3-->
+                    <div class="category category_color3"></div>
+                    <div class="card_content">
+                        <header class="card_head">
+                            <h2>Graphic Design</h2>
+                            <p>Active recently</p>
+                            <ul>
+                                <li>Coming soon banner</li>
+                                <li>Book cover</li>
+                            </ul>
+                        </header>
+                        <footer class="card_footer">
+                            <div class="card_media">
+                                <img src="/assets/img/headshot1.jpg" alt="" >
+                                <img src="/assets/img/headshot2.jpg" alt="" class="stack">
+                                <img src="/assets/img/headshot3.jpg" alt="" class="stack">
+                            </div>
+                            <span class="material-symbols-outlined"> more_vert</span>
+                        </footer>
+                    </div>                    
+                </article> <!-- Project Card3 End-->
+
+                <article class="project_card" data-status="recent" title="Recent Project"> <!-- Project Card4-->
+                    <div class="category category_color4"></div>
+                    <div class="card_content">
+                        <header class="card_head">
+                            <h2>Graphic Design</h2>
+                            <p>Active recently</p>
+                            <ul>
+                                <li>Coming soon banner</li>
+                                <li>Book cover</li>
+                            </ul>
+                        </header>
+                        <footer class="card_footer">
+                            <div class="card_media">
+                                <img src="/assets/img/headshot1.jpg" alt="" >
+                                <img src="/assets/img/headshot2.jpg" alt="" class="stack">
+                                <img src="/assets/img/headshot3.jpg" alt="" class="stack">
+                            </div>
+                            <span class="material-symbols-outlined"> more_vert</span>
+                        </footer>
+                    </div>                    
+                </article>
+
+                <article class="project_card" data-status="ongoing" title="Ongoing Project"> <!-- Project Card5-->
+                    <div class="category category_color2"></div>
+                    <div class="card_content">
+                        <header class="card_head">
+                            <h2>Graphic Design</h2>
+                            <p>Active recently</p>
+                            <ul>
+                                <li>Coming soon banner</li>
+                                <li>Book cover</li>
+                            </ul>
+                        </header>
+                        <footer class="card_footer">
+                            <div class="card_media">
+                                <img src="/assets/img/headshot1.jpg" alt="" >
+                                <img src="/assets/img/headshot2.jpg" alt="" class="stack">
+                                <img src="/assets/img/headshot3.jpg" alt="" class="stack">
+                            </div>
+                            <span class="material-symbols-outlined"> more_vert</span>
+                        </footer>
+                    </div>                    
+                </article>
+
+                <article class="project_card" data-status="stalled" title="Stalled Project"> <!-- Project Card6-->
+                    <div class="category category_color3"></div>
+                    <div class="card_content">
+                        <header class="card_head">
+                            <h2>Graphic Design</h2>
+                            <p>Active recently</p>
+                            <ul>
+                                <li>Coming soon banner</li>
+                                <li>Book cover</li>
+                            </ul>
+                        </header>
+                        <footer class="card_footer">
+                            <div class="card_media">
+                                <img src="/assets/img/headshot1.jpg" alt="" >
+                                <img src="/assets/img/headshot2.jpg" alt="" class="stack">
+                                <img src="/assets/img/headshot3.jpg" alt="" class="stack">
+                            </div>
+                            <span class="material-symbols-outlined"> more_vert</span>
+                        </footer>
+                    </div>                    
+                </article>                
+
+            </section> <!-- Project Listing end -->
+
+        </main> <!-- Main end -->
+
+        <aside class="aside"> <!-- Aside -->
+
+            <section class="chart">
+                <h2>Total Projects</h2>
+                    <div>
+                        <canvas id="myChart"></canvas>
+                    </div>
+                    <div class="completed">
+                        <h3>3 Completed</h3>
+                        <p>from 5 projects</p>
+                    </div>
+            </section>
+
+            <section class="recent_projects"> <!-- Recent projects -->
+                
+                <article class="recent_card">
+                    <div class="card_content">
+                        <header class="card_header">
+                            <div class="category category_color1"></div>
+                            <h2>Layouting</h2>
+                            <p>by John Doe</p>
+                        </header>
+                        <footer class="card_footer">
+                            <span class="material-symbols-outlined"> more_vert</span>
+                        </footer>
+                    </div>                    
+                </article>
+                
+                <article class="recent_card">
+                    <div class="card_content">
+                        <header class="card_header">
+                            <div class="category category_color2"></div>
+                            <h2>Layouting</h2>
+                            <p>by John Doe</p>
+                        </header>
+                        <footer class="card_footer">
+                            <span class="material-symbols-outlined"> more_vert</span>
+                        </footer>
+                    </div>                    
+                </article>
+
+                <article class="recent_card">
+                    <div class="card_content">
+                        <header class="card_header">
+                            <div class="category category_color3"></div>
+                            <h2>Layouting</h2>
+                            <p>by John Doe</p>
+                        </header>
+                        <footer class="card_footer">
+                            <span class="material-symbols-outlined"> more_vert</span>
+                        </footer>
+                    </div>                    
+                </article>
+
+                <article class="recent_card">
+                    <div class="card_content">
+                        <header class="card_header">
+                            <div class="category category_color4"></div>
+                            <h2>Layouting</h2>
+                            <p>by John Doe</p>
+                        </header>
+                        <footer class="card_footer">
+                            <span class="material-symbols-outlined"> more_vert</span>
+                        </footer>
+                    </div>                    
+                </article>
+
+            </section> <!-- Recent projects end -->
+
+        </aside> <!-- Aside end -->
+
+    </div> <!-- Dashboard end -->
+
+ 
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="/assets/js/script.js"></script> 
+  
+    
+</body>
+</html>
